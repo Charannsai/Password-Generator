@@ -53,14 +53,14 @@ function Pass() {
           <input
             value={password}
             type="text"
-            className="outline-none bg-slate-200 px-4 w-full sm:w-96 py-3 rounded-l font-semibold"
+            className="outline-none bg-slate-200 px-4 w-full sm:w-96 py-3 rounded font-semibold"
             placeholder="Generate Password"
             readOnly
           />
           <button
             className={`py-3 px-3 text-white font-semibold transition ease-in-out delay-100 duration-300 w-full sm:w-auto
             ${copyStatus === 'Copied!' ? 'bg-green-700' : 'bg-red-600'} 
-            rounded-r `}
+            rounded`}
             onClick={handleCopy}
           >
             {copyStatus}
